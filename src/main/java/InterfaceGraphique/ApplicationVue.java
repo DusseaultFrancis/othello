@@ -8,8 +8,11 @@ import javax.swing.*;
 
 public class ApplicationVue extends JFrame implements ActionListener {
 
-    public ApplicationVue(Partie partie) {
-
+    public ApplicationVue() {
+        
+        setTitle("Othello");
+        setBounds(450, 200, 1000, 720);
+        
     }
 
     public void actionPerformed(ActionEvent e) {

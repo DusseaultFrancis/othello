@@ -21,7 +21,8 @@ public class Othello {
         // TODO code application logic here
         
         Partie partie = null;
-        ApplicationVue jeu = new ApplicationVue(partie);
+        ApplicationVue jeu = new ApplicationVue();
+        jeu.setVisible(true);
 
     }
 
