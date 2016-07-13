@@ -14,11 +14,12 @@ public class Application {
     private Joueur joueur;
     private Partie partie;
 
-    public PartieIA jouerContreIa() {
+    public Partie jouerContreIa() {
+        joueur = new Joueur(Couleur.BLANC);
+        partie = new PartieIA(joueur, new IADebutant());
+        partie.jouer();
 
-        PartieIA partieIA = null;
-
-        return partieIA;
+        return partie;
     }
 
     public PartieHumain jouerContreHumain() {

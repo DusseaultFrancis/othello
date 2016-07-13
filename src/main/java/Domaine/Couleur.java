@@ -9,25 +9,8 @@ package Domaine;
  *
  * @author Francis
  */
-public class Couleur {
+public enum Couleur {
 
-    private String blanc;
-    private String noir;
-
-    public String getBlanc() {
-        return blanc;
-    }
-
-    public String getNoir() {
-        return noir;
-    }
-
-    public void setBlanc(String blanc) {
-        this.blanc = blanc;
-    }
-
-    public void setNoir(String noir) {
-        this.noir = noir;
-    }
+    BLANC, NOIR;
 
 }

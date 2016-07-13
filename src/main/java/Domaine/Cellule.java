@@ -16,10 +16,15 @@ public class Cellule {
     private boolean occupe;
     private Pion pion;
 
+    public Cellule(int ligne, int colonne) {
+        this.ligne = ligne;
+        this.colonne = colonne;
+        occupe = false;
+        pion = null;
+    }
+    
     public boolean estOccupe() {
-        boolean estOccupe = false;
-
-        return estOccupe;
+        return occupe;
     }
 
     public int getLigne() {

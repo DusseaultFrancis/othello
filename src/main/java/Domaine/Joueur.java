@@ -13,12 +13,16 @@ public class Joueur {
 
     private Couleur couleur;
 
+    public Joueur(Couleur couleur) {
+        this.couleur = couleur;
+    }
+    
     public void passerTour() {
 
     }
 
-    public void jouerPion(Table table, int ligne, int colonne) {
-
+    public boolean jouerPion(Table table, int ligne, int colonne) {
+        return table.ajouterPion(this.couleur, ligne, colonne);
     }
 
     public Couleur getCouleur() {

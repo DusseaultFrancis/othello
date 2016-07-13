@@ -5,66 +5,90 @@
  */
 package Domaine;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Francis
  */
-public class PartieIA {
+public class PartieIA implements Partie{
 
     private Joueur blanc;
-    private Joueur noir;
-    private Joueur joueurCourant;
-    private Table table[];
+    private JoueurArtificiel noir;
+    private Couleur joueurCourant;
+    private ArrayList<Table> listeTable;
     private int tour;
     private boolean fini;
 
     public PartieIA(Joueur blanc, JoueurArtificiel noir) {
-
+        this.listeTable = new ArrayList<Table>();
+        this.listeTable.add(new Table());
+        this.blanc = blanc;
+        this.noir = noir;
+        this.joueurCourant = Couleur.BLANC;
+        this.fini = false;
+    }
+    
+    @Override
+    public void changerJoueurCourant() {
+        if(joueurCourant.equals(Couleur.BLANC)){
+            joueurCourant = Couleur.NOIR;
+        }else{
+            joueurCourant = Couleur.BLANC;
+        }
+    }
+    
+    @Override
+    public void jouer() {
+        
+        while(!fini) {
+            if(joueurCourant.equals(Couleur.BLANC)) { // le joueur humain joue
+                int ligne = 0;
+                int colonne = 0;
+                if(blanc.jouerPion(listeTable.get(tour), ligne, colonne)) {
+                    listeTable.add(new Table(listeTable.get(tour)));
+                    listeTable.get(tour).notify(); // a revoir
+                    tour++;
+                    changerJoueurCourant();
+                }
+            }else{ // le joueur Artificiel joue
+                if(noir.algorithmeJeu(listeTable.get(tour))) {
+                    listeTable.add(new Table(listeTable.get(tour)));
+                    listeTable.get(tour).notify();// a revoir
+                    tour++;
+                }
+                changerJoueurCourant();
+            }
+            if(listeTable.get(tour).getNbPionBlanc() + listeTable.get(tour).getNbPionNoir() == 64) {
+                fini = true;
+            }
+        }
     }
 
     public void Sauvegarder() {
 
     }
 
-    public Joueur getBlanc() {
-        return blanc;
-    }
+    
 
-    public Joueur getNoir() {
-        return noir;
-    }
+   
 
-    public Joueur getJoueurCourant() {
+    public Couleur getJoueurCourant() {
         return joueurCourant;
     }
 
-    public Table[] getTable() {
-        return table;
+    public ArrayList<Table> getTable() {
+        return listeTable;
     }
 
     public int getTour() {
         return tour;
     }
 
-    public boolean isFini() {
-        return fini;
-    }
+  
 
-    public void setBlanc(Joueur blanc) {
-        this.blanc = blanc;
-    }
 
-    public void setNoir(Joueur noir) {
-        this.noir = noir;
-    }
 
-    public void setJoueurCourant(Joueur joueurCourant) {
-        this.joueurCourant = joueurCourant;
-    }
-
-    public void setTable(Table[] table) {
-        this.table = table;
-    }
 
     public void setTour(int tour) {
         this.tour = tour;
@@ -72,6 +96,16 @@ public class PartieIA {
 
     public void setFini(boolean fini) {
         this.fini = fini;
+    }
+
+    @Override
+    public void visualiser() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public boolean estFini() {
+        return fini;
     }
 
 }

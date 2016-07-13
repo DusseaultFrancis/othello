@@ -5,6 +5,7 @@
  */
 package Domaine;
 
+
 /**
  *
  * @author Francis
@@ -14,9 +15,15 @@ public class Pion {
     private Couleur couleur;
 
     public Pion(Couleur couleur) {
+        this.couleur = couleur;
     }
 
     public void changerCouleur() {
+        if(couleur.equals(Couleur.BLANC)){
+            couleur = Couleur.NOIR;
+        }else{
+            couleur = Couleur.BLANC;
+        }
     }
 
     public Couleur getCouleur() {
