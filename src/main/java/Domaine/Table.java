@@ -126,49 +126,56 @@ public class Table {
 		}
 		listeCellule[ligne -i][colonne].getPion().changerCouleur();
             }
-	}else if(validerDroite(couleur, ligne, colonne) > 1){
+	}
+        if(validerDroite(couleur, ligne, colonne) > 1){
             for (int i = 1; i < validerDroite(couleur, ligne, colonne); i++) {
 		if(listeCellule[ligne][colonne+i].getPion().getCouleur().equals(couleur)){
                     break;
 		}
 		listeCellule[ligne][colonne+i].getPion().changerCouleur();
             }
-	}else if(validerBas(couleur,ligne,colonne) > 1){
+	}
+        if(validerBas(couleur,ligne,colonne) > 1){
             for (int i = 1; i < validerBas(couleur, ligne, colonne); i++) {
 		if(listeCellule[ligne+i][colonne].getPion().getCouleur().equals(couleur)){
                     break;
 		}
 		listeCellule[ligne+i][colonne].getPion().changerCouleur();
             }
-	}else if(validerGauche(couleur,ligne,colonne) > 1){
+	}
+        if(validerGauche(couleur,ligne,colonne) > 1){
             for (int i = 1; i < validerGauche(couleur, ligne, colonne); i++) {
 		if(listeCellule[ligne][colonne-i].getPion().getCouleur().equals(couleur)){
                     break;
 		}
 		listeCellule[ligne][colonne-i].getPion().changerCouleur();
             }
-        }else if(validerDiagHD(couleur,ligne,colonne) > 1){
+        }
+        if(validerDiagHD(couleur,ligne,colonne) > 1){
             for (int i = 1; i < validerDiagHD(couleur, ligne, colonne); i++) {
 		if(listeCellule[ligne-i][colonne+i].getPion().getCouleur().equals(couleur)){
                     break;
 		}
 		listeCellule[ligne-i][colonne+i].getPion().changerCouleur();
             }
-	}else if(validerDiagBD(couleur,ligne,colonne) > 1){
+	}
+        if(validerDiagBD(couleur,ligne,colonne) > 1){
             for (int i = 1; i < validerDiagBD(couleur, ligne, colonne); i++) {
 		if(listeCellule[ligne+i][colonne+i].getPion().getCouleur().equals(couleur)){
                     break;
 		}
 		listeCellule[ligne+i][colonne+i].getPion().changerCouleur();
             }
-	}else if(validerDiagBG(couleur,ligne,colonne) > 1){
+	}
+        if(validerDiagBG(couleur,ligne,colonne) > 1){
             for (int i = 1; i < validerDiagBG(couleur, ligne, colonne); i++) {
 		if(listeCellule[ligne+i][colonne-i].getPion().getCouleur().equals(couleur)){
                     break;
 		}
 		listeCellule[ligne+i][colonne-i].getPion().changerCouleur();
             }
-	}else if(validerDiagHG(couleur,ligne,colonne) > 1){
+	}
+        if(validerDiagHG(couleur,ligne,colonne) > 1){
             for (int i = 1; i < validerDiagHG(couleur, ligne, colonne); i++) {
 		if(listeCellule[ligne-i][colonne-i].getPion().getCouleur().equals(couleur)){
                     break;

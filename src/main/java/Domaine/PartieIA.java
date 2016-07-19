@@ -69,10 +69,6 @@ public class PartieIA implements Partie{
 
     }
 
-    
-
-   
-
     public Couleur getJoueurCourant() {
         return joueurCourant;
     }
