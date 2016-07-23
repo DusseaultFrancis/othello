@@ -7,6 +7,8 @@ package Domaine;
 
 import InterfaceGraphique.ApplicationVue;
 import InterfaceGraphique.TableObserver;
+import interfaceGraphique.ChoisirDifficulte;
+import interfaceGraphique.ChoisirJoueur;
 
 /**
  *
@@ -16,25 +18,24 @@ public class Application {
 
     private Joueur joueur;
     private Partie partie;
-    
-    public static void main(String[] args) {
-        // TODO code application logic here
-        
-        Application app = new Application();
-        ApplicationVue jeu = new ApplicationVue(app);
-        TableObserver observateur = new TableObserver(jeu);
-        app.jouerContreIa(observateur);
-       
-        jeu.setVisible(true);
-        
-    }
-    
-    
 
-    public Partie jouerContreIa(TableObserver observateur) {
+    public static void main(String[] args) {
+
+        ChoisirJoueur choixJoueur = new ChoisirJoueur();
+
+    }
+
+    public Partie jouerContreIaDebutant(TableObserver observateur) {
         joueur = new Joueur(Couleur.BLANC);
         partie = new PartieIA(joueur, new IADebutant(), observateur);
-        
+
+        return partie;
+    }
+    
+        public Partie jouerContreIaAvance(TableObserver observateur) {
+        joueur = new Joueur(Couleur.BLANC);
+        partie = new PartieIA(joueur, new IAAvance(), observateur);
+
         return partie;
     }
 

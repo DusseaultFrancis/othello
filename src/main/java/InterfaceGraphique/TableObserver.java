@@ -13,23 +13,26 @@ import Domaine.Table;
  * @author Francis
  */
 public class TableObserver {
+
     ApplicationVue vue;
-    
+
     public TableObserver(ApplicationVue vue) {
         this.vue = vue;
     }
-    
+
     public void update(Table table) {
-        for(int i = 0; i < table.getListeCellule().length; i++) {
-            for(int j = 0; j < table.getListeCellule()[i].length; j++) {
-                if(table.getListeCellule()[i][j].estOccupe()){
-                    if(table.getListeCellule()[i][j].getPion().getCouleur().equals(Couleur.BLANC)) {
+        for (int i = 0; i < table.getListeCellule().length; i++) {
+            for (int j = 0; j < table.getListeCellule()[i].length; j++) {
+                if (table.getListeCellule()[i][j].estOccupe()) {
+                    if (table.getListeCellule()[i][j].getPion().getCouleur().equals(Couleur.BLANC)) {
                         vue.setCouleurCellule(i, j, Couleur.BLANC);
-                    }else {
+                    } else {
                         vue.setCouleurCellule(i, j, Couleur.NOIR);
                     }
                 }
             }
         }
+        vue.setOrdinateurPoints(table.getNbPionNoir());
+        vue.setJoueurPoints(table.getNbPionBlanc());
     }
 }

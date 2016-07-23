@@ -22,7 +22,7 @@ public class Cellule {
         occupe = false;
         pion = null;
     }
-    
+
     public boolean estOccupe() {
         return occupe;
     }
