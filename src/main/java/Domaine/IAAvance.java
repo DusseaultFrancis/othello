@@ -32,12 +32,13 @@ public class IAAvance implements JoueurArtificiel{
 
     @Override
     public boolean algorithmeJeu(Table table) {
+        listeCellule.clear();
         int nbPion = 0;
         for(int i = 0; i < table.getListeCellule().length; i++) {
             for(int j = 0; j < table.getListeCellule().length; j++) {
                 if(table.peutJouer(couleur, i, j) != -1 && table.peutJouer(couleur, i, j) == nbPion) {
                     listeCellule.add(new Cellule(i,j));
-                }else{
+                }else if(table.peutJouer(couleur, i, j) != -1 && table.peutJouer(couleur, i, j) > nbPion){
                     listeCellule.clear();
                     listeCellule.add(new Cellule(i,j));
                     nbPion = table.peutJouer(couleur, i, j);

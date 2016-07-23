@@ -35,10 +35,6 @@ public class Cellule {
         return colonne;
     }
 
-    public boolean isOccupe() {
-        return occupe;
-    }
-
     public Pion getPion() {
         return pion;
     }

@@ -13,7 +13,7 @@ public interface Partie {
 
     public void changerJoueurCourant();
 
-    public void jouer();
+    public void jouer(int linge, int colonne);
 
     public void visualiser();
 

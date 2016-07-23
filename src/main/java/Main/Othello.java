@@ -5,6 +5,7 @@
  */
 package Main;
 
+import Domaine.Application;
 import Domaine.Partie;
 import InterfaceGraphique.ApplicationVue;
 
@@ -23,7 +24,8 @@ public class Othello {
         Partie partie = null;
         ApplicationVue jeu = new ApplicationVue();
         jeu.setVisible(true);
-
+        Application app = new Application();
+        app.jouerContreIa();
     }
 
 }

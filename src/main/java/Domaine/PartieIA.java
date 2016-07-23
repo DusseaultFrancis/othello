@@ -5,6 +5,7 @@
  */
 package Domaine;
 
+import InterfaceGraphique.TableObserver;
 import java.util.ArrayList;
 
 /**
@@ -19,14 +20,18 @@ public class PartieIA implements Partie{
     private ArrayList<Table> listeTable;
     private int tour;
     private boolean fini;
+    private TableObserver observateur;
 
-    public PartieIA(Joueur blanc, JoueurArtificiel noir) {
+    public PartieIA(Joueur blanc, JoueurArtificiel noir, TableObserver observateur) {
         this.listeTable = new ArrayList<Table>();
         this.listeTable.add(new Table());
         this.blanc = blanc;
         this.noir = noir;
         this.joueurCourant = Couleur.BLANC;
         this.fini = false;
+        this.observateur = observateur;
+        tour = 0;
+        updateObserver(listeTable.get(tour));
     }
     
     @Override
@@ -39,31 +44,43 @@ public class PartieIA implements Partie{
     }
     
     @Override
-    public void jouer() {
+    public void jouer(int ligne, int colonne) {
         
-        while(!fini) {
-            if(joueurCourant.equals(Couleur.BLANC)) { // le joueur humain joue
-                int ligne = 0;
-                int colonne = 0;
+        
+             // le joueur humain joue
+                
                 if(blanc.jouerPion(listeTable.get(tour), ligne, colonne)) {
                     listeTable.add(new Table(listeTable.get(tour)));
-                    listeTable.get(tour).notify(); // a revoir
+                    updateObserver(listeTable.get(tour));
                     tour++;
                     changerJoueurCourant();
-                }
-            }else{ // le joueur Artificiel joue
+                    
+                    // le joueur Artificiel joue
                 if(noir.algorithmeJeu(listeTable.get(tour))) {
                     listeTable.add(new Table(listeTable.get(tour)));
-                    listeTable.get(tour).notify();// a revoir
+                    updateObserver(listeTable.get(tour));
                     tour++;
                 }
                 changerJoueurCourant();
-            }
+                }
+             
+            
             if(listeTable.get(tour).getNbPionBlanc() + listeTable.get(tour).getNbPionNoir() == 64) {
                 fini = true;
+                return;
             }
-        }
+            System.out.println("asdfs");
+        
     }
+    
+    public void register(TableObserver observateur) {
+        this.observateur = observateur;
+    }
+    
+    public void updateObserver(Table table) {
+        observateur.update(table);
+    }
+    
 
     public void Sauvegarder() {
 
@@ -80,10 +97,6 @@ public class PartieIA implements Partie{
     public int getTour() {
         return tour;
     }
-
-  
-
-
 
 
     public void setTour(int tour) {

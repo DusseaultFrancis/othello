@@ -1,6 +1,8 @@
 package InterfaceGraphique;
 
-import Domaine.Partie;
+import Domaine.Application;
+import Domaine.Couleur;
+
 import java.awt.Color;
 import java.awt.GridLayout;
 
@@ -14,9 +16,10 @@ public class ApplicationVue extends JFrame implements ActionListener {
 
     private JButton[][] cellules = new JButton[8][8];
     private JPanel table;
+    private Application app;
     
-    public ApplicationVue() {
-        
+    public ApplicationVue(Application app) {
+        this.app = app;
         setTitle("Othello");
         setBounds(450, 200, 1000, 720);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -34,6 +37,7 @@ public class ApplicationVue extends JFrame implements ActionListener {
                     b.setBackground(new Color(0,100,0));
                 }
                 cellules[j][i] = b;
+                cellules[j][i].addActionListener(new CelluleActionListener(i, j));
             }
         }
         
@@ -56,6 +60,28 @@ public class ApplicationVue extends JFrame implements ActionListener {
 
     }
     
+    public void setCouleurCellule(int i, int j, Couleur couleur){
+        if(couleur.equals(Couleur.BLANC)){
+            cellules[j][i].setBackground(Color.white);
+        }else{
+            cellules[j][i].setBackground(Color.black);
+        }
+    }
     
+    private class CelluleActionListener implements ActionListener{
+        private int i;
+        private int j;
+        
+        public CelluleActionListener(int i, int j) {
+            this.i = i;
+            this.j = j;
+        }
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            System.out.println("i: " + i + ", j: " + j);
+            app.getPartie().jouer(i,j);
+        }
+    }
 
 }

@@ -5,7 +5,7 @@
  */
 package Domaine;
 
-import InterfaceGraphique.TableObserver;
+
 
 /**
  *
@@ -16,7 +16,7 @@ public class Table {
     private Cellule listeCellule[][];
     private int nbPionBlanc = 0;
     private int nbPionNoir = 0;
-    TableObserver observateur;
+    
 
     public Table() {
         listeCellule = new Cellule[8][8];
@@ -49,7 +49,7 @@ public class Table {
     }
     
     public int peutJouer(Couleur couleur, int ligne, int colonne) {
-        int nbPion = -1;
+        int nbPion = 0;
 	int temp;
 	if((ligne >= 0 && ligne < 8) && (colonne >= 0 && colonne < 8)){
             if(listeCellule[ligne][colonne].estOccupe()){
@@ -104,6 +104,9 @@ public class Table {
 		}
             }
 	}
+        if(nbPion == 0){
+            return -1;
+        }
 	return nbPion;
     }
 
@@ -120,7 +123,7 @@ public class Table {
 
     public void modifierCouleurPions(Couleur couleur, int ligne, int colonne) {
         if(validerHaut(couleur, ligne, colonne) > 1){
-            for (int i = 1; i < validerHaut(couleur, ligne, colonne); i++) {
+            for (int i = 1; i < 8; i++) {
 		if(listeCellule[ligne - i][colonne].getPion().getCouleur().equals(couleur)){
                     break;
 		}
@@ -128,7 +131,7 @@ public class Table {
             }
 	}
         if(validerDroite(couleur, ligne, colonne) > 1){
-            for (int i = 1; i < validerDroite(couleur, ligne, colonne); i++) {
+            for (int i = 1; i < 8; i++) {
 		if(listeCellule[ligne][colonne+i].getPion().getCouleur().equals(couleur)){
                     break;
 		}
@@ -136,7 +139,7 @@ public class Table {
             }
 	}
         if(validerBas(couleur,ligne,colonne) > 1){
-            for (int i = 1; i < validerBas(couleur, ligne, colonne); i++) {
+            for (int i = 1; i < 8; i++) {
 		if(listeCellule[ligne+i][colonne].getPion().getCouleur().equals(couleur)){
                     break;
 		}
@@ -144,7 +147,7 @@ public class Table {
             }
 	}
         if(validerGauche(couleur,ligne,colonne) > 1){
-            for (int i = 1; i < validerGauche(couleur, ligne, colonne); i++) {
+            for (int i = 1; i < 8; i++) {
 		if(listeCellule[ligne][colonne-i].getPion().getCouleur().equals(couleur)){
                     break;
 		}
@@ -152,7 +155,7 @@ public class Table {
             }
         }
         if(validerDiagHD(couleur,ligne,colonne) > 1){
-            for (int i = 1; i < validerDiagHD(couleur, ligne, colonne); i++) {
+            for (int i = 1; i < 8; i++) {
 		if(listeCellule[ligne-i][colonne+i].getPion().getCouleur().equals(couleur)){
                     break;
 		}
@@ -160,7 +163,7 @@ public class Table {
             }
 	}
         if(validerDiagBD(couleur,ligne,colonne) > 1){
-            for (int i = 1; i < validerDiagBD(couleur, ligne, colonne); i++) {
+            for (int i = 1; i < 8; i++) {
 		if(listeCellule[ligne+i][colonne+i].getPion().getCouleur().equals(couleur)){
                     break;
 		}
@@ -168,7 +171,7 @@ public class Table {
             }
 	}
         if(validerDiagBG(couleur,ligne,colonne) > 1){
-            for (int i = 1; i < validerDiagBG(couleur, ligne, colonne); i++) {
+            for (int i = 1; i < 8; i++) {
 		if(listeCellule[ligne+i][colonne-i].getPion().getCouleur().equals(couleur)){
                     break;
 		}
@@ -176,13 +179,12 @@ public class Table {
             }
 	}
         if(validerDiagHG(couleur,ligne,colonne) > 1){
-            for (int i = 1; i < validerDiagHG(couleur, ligne, colonne); i++) {
+            for (int i = 1; i < 8; i++) {
 		if(listeCellule[ligne-i][colonne-i].getPion().getCouleur().equals(couleur)){
                     break;
 		}
 		listeCellule[ligne-i][colonne-i].getPion().changerCouleur();
-            }
-			
+            }		
 	}
     }
 
@@ -198,9 +200,7 @@ public class Table {
         return nbPionNoir;
     }
 
-    public TableObserver getObservateur() {
-        return observateur;
-    }
+  
 
     public void compteNbPions() {
         nbPionBlanc = 0;
@@ -218,12 +218,6 @@ public class Table {
         }
     }
 
-    
-
-    public void setObservateur(TableObserver observateur) {
-        this.observateur = observateur;
-    }
-    
     private int validerHaut(Couleur couleur, int ligne, int colonne){
 	for (int i = 1; i < listeCellule.length; i++) {
             if(ligne-i < 0){
@@ -240,7 +234,7 @@ public class Table {
 	
     private int validerDroite(Couleur couleur, int ligne, int colonne) {
         for (int i = 1; i < listeCellule.length; i++) {
-            if (colonne + i > 8) {
+            if (colonne + i >= 8) {
                 break;
             }
             if (!listeCellule[ligne][colonne + i].estOccupe()) {
@@ -254,7 +248,7 @@ public class Table {
 	
 	   private int validerBas(Couleur couleur, int ligne, int colonne) {
         for (int i = 1; i < listeCellule.length; i++) {
-            if (ligne + i > 8) {
+            if (ligne + i >= 8) {
                 break;
             }
             if (!listeCellule[ligne + i][colonne].estOccupe()) {
@@ -282,7 +276,7 @@ public class Table {
 
     private int validerDiagHD(Couleur couleur, int ligne, int colonne) {
         for (int i = 1; i < listeCellule.length; i++) {
-            if (ligne - i < 0 || colonne + i > 8) {
+            if (ligne - i < 0 || colonne + i >= 8) {
                 break;
             }
             if (!listeCellule[ligne - i][colonne + i].estOccupe()) {
@@ -296,7 +290,7 @@ public class Table {
 
     private int validerDiagBD(Couleur couleur, int ligne, int colonne) {
         for (int i = 1; i < listeCellule.length; i++) {
-            if (ligne + i > 8 || colonne + i > 8) {
+            if (ligne + i >= 8 || colonne + i >= 8) {
                 break;
             }
             if (!listeCellule[ligne + i][colonne + i].estOccupe()) {
@@ -310,7 +304,7 @@ public class Table {
 
     private int validerDiagBG(Couleur couleur, int ligne, int colonne) {
         for (int i = 1; i < listeCellule.length; i++) {
-            if (ligne + i > 8 || colonne - i < 0) {
+            if (ligne + i >= 8 || colonne - i < 0) {
                 break;
             }
             if (!listeCellule[ligne + i][colonne - i].estOccupe()) {

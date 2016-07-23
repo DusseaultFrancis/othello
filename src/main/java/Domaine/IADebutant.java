@@ -32,6 +32,7 @@ public class IADebutant implements JoueurArtificiel{
 
     @Override
     public boolean algorithmeJeu(Table table) {
+        listeCellule.clear();
         for(int i = 0; i < table.getListeCellule().length; i++) {
             for(int j = 0; j < table.getListeCellule().length; j++) {
                 if(table.peutJouer(couleur, i, j) != -1) {

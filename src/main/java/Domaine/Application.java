@@ -5,6 +5,9 @@
  */
 package Domaine;
 
+import InterfaceGraphique.ApplicationVue;
+import InterfaceGraphique.TableObserver;
+
 /**
  *
  * @author Francis
@@ -13,12 +16,25 @@ public class Application {
 
     private Joueur joueur;
     private Partie partie;
+    
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+        Application app = new Application();
+        ApplicationVue jeu = new ApplicationVue(app);
+        TableObserver observateur = new TableObserver(jeu);
+        app.jouerContreIa(observateur);
+       
+        jeu.setVisible(true);
+        
+    }
+    
+    
 
-    public Partie jouerContreIa() {
+    public Partie jouerContreIa(TableObserver observateur) {
         joueur = new Joueur(Couleur.BLANC);
-        partie = new PartieIA(joueur, new IADebutant());
-        partie.jouer();
-
+        partie = new PartieIA(joueur, new IADebutant(), observateur);
+        
         return partie;
     }
 
