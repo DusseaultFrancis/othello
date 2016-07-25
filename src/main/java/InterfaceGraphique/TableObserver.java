@@ -14,13 +14,13 @@ import Domaine.Table;
  */
 public class TableObserver {
 
-    ApplicationVue vue;
+    static ApplicationVue vue;
 
     public TableObserver(ApplicationVue vue) {
         this.vue = vue;
     }
 
-    public void update(Table table) {
+    public static void update(Table table) {
         for (int i = 0; i < table.getListeCellule().length; i++) {
             for (int j = 0; j < table.getListeCellule()[i].length; j++) {
                 if (table.getListeCellule()[i][j].estOccupe()) {

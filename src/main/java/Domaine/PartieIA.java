@@ -6,13 +6,18 @@
 package Domaine;
 
 import InterfaceGraphique.TableObserver;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.xml.bind.JAXBException;
 
 /**
  *
  * @author Francis
  */
-public class PartieIA implements Partie{
+public class PartieIA implements Partie {
 
     private Joueur blanc;
     private JoueurArtificiel noir;
@@ -33,57 +38,55 @@ public class PartieIA implements Partie{
         tour = 0;
         updateObserver(listeTable.get(tour));
     }
-    
+
     @Override
     public void changerJoueurCourant() {
-        if(joueurCourant.equals(Couleur.BLANC)){
+        if (joueurCourant.equals(Couleur.BLANC)) {
             joueurCourant = Couleur.NOIR;
-        }else{
+        } else {
             joueurCourant = Couleur.BLANC;
         }
     }
-    
+
     @Override
     public void jouer(int ligne, int colonne) {
-        
-        
-             // le joueur humain joue
-                
-                if(blanc.jouerPion(listeTable.get(tour), ligne, colonne)) {
-                    listeTable.add(new Table(listeTable.get(tour)));
-                    updateObserver(listeTable.get(tour));
-                    tour++;
-                    changerJoueurCourant();
-                    
-                    // le joueur Artificiel joue
-                if(noir.algorithmeJeu(listeTable.get(tour))) {
-                    listeTable.add(new Table(listeTable.get(tour)));
-                    updateObserver(listeTable.get(tour));
-                    tour++;
-                }
-                changerJoueurCourant();
-                }
-             
-            
-            if(listeTable.get(tour).getNbPionBlanc() + listeTable.get(tour).getNbPionNoir() == 64) {
-                fini = true;
-                return;
+
+        // le joueur humain joue
+        if (blanc.jouerPion(listeTable.get(tour), ligne, colonne)) {
+            listeTable.add(new Table(listeTable.get(tour)));
+            updateObserver(listeTable.get(tour));
+            tour++;
+            changerJoueurCourant();
+
+            // le joueur Artificiel joue
+            if (noir.algorithmeJeu(listeTable.get(tour))) {
+                listeTable.add(new Table(listeTable.get(tour)));
+                updateObserver(listeTable.get(tour));
+                tour++;
             }
-            System.out.println("asdfs");
-        
+            changerJoueurCourant();
+        }
+
+        if (listeTable.get(tour).getNbPionBlanc() + listeTable.get(tour).getNbPionNoir() == 64) {
+            fini = true;
+            return;
+        }
+        System.out.println("asdfs");
+
     }
-    
+
     public void register(TableObserver observateur) {
         this.observateur = observateur;
     }
-    
+
     public void updateObserver(Table table) {
         observateur.update(table);
     }
-    
 
-    public void Sauvegarder() {
-
+    public void sauvegarder(String fichier) {
+        
+        
+  
     }
 
     public Couleur getJoueurCourant() {
@@ -98,7 +101,6 @@ public class PartieIA implements Partie{
         return tour;
     }
 
-
     public void setTour(int tour) {
         this.tour = tour;
     }
@@ -109,7 +111,15 @@ public class PartieIA implements Partie{
 
     @Override
     public void visualiser() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+
+        Iterator<Table> it = listeTable.iterator();
+
+        while (it.hasNext()) {
+            Table table = it.next();
+            InterfaceGraphique.TableObserver.update(table);
+            //timer
+        }
+
     }
 
     @Override

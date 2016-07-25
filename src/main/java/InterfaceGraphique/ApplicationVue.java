@@ -11,6 +11,9 @@ import java.awt.GridLayout;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -32,7 +35,7 @@ public class ApplicationVue extends JFrame implements ActionListener {
     private JTextField ordinateurPoints;
     private JTextField joueurPoints;
 
-    private JButton boutonJouerIA;
+    private JButton boutonSauvegarder;
     private JButton boutonChargerPartie;
     private JButton boutonVisualiserPartie;
     private JButton boutonQuitter;
@@ -110,23 +113,46 @@ public class ApplicationVue extends JFrame implements ActionListener {
 
         option.setLayout(new GridLayout(4, 1, 0, 0));
 
-        boutonJouerIA = new JButton("Jouer contre l'ordinateur");
-        boutonJouerIA.setBackground(Color.decode("#87E990"));
+        boutonSauvegarder = new JButton("Sauvegarder la partie");
+        boutonSauvegarder.setBackground(Color.decode("#87E990"));
+        boutonSauvegarder.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg2) {
+               
+                interfaceGraphique.SaisirNomSauvegarde nomSauvegarde = new interfaceGraphique.SaisirNomSauvegarde(app.getPartie());
+                nomSauvegarde.setVisible(true);
+
+                
+              
+            }
+        });
+        
+        
 
         boutonChargerPartie = new JButton("Charger la partie");
         boutonChargerPartie.setBackground(Color.decode("#87E990"));
+        boutonChargerPartie.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg2) {
+              
+            }
+        });
+
         boutonVisualiserPartie = new JButton("Visualiser la partie");
         boutonVisualiserPartie.setBackground(Color.decode("#87E990"));
+        boutonVisualiserPartie.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg2) {
+                app.getPartie().visualiser();
+            }
+        });
+
         boutonQuitter = new JButton("Quitter");
         boutonQuitter.setBackground(Color.decode("#87E990"));
-
         boutonQuitter.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
                 System.exit(1);
             }
         });
 
-        option.add(boutonJouerIA);
+        option.add(boutonSauvegarder);
         option.add(boutonChargerPartie);
         option.add(boutonVisualiserPartie);
         option.add(boutonQuitter);

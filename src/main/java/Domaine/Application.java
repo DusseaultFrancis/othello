@@ -31,8 +31,8 @@ public class Application {
 
         return partie;
     }
-    
-        public Partie jouerContreIaAvance(TableObserver observateur) {
+
+    public Partie jouerContreIaAvance(TableObserver observateur) {
         joueur = new Joueur(Couleur.BLANC);
         partie = new PartieIA(joueur, new IAAvance(), observateur);
 
