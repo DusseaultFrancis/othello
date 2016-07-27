@@ -7,6 +7,7 @@ package InterfaceGraphique;
 
 import Domaine.Couleur;
 import Domaine.Table;
+import java.awt.Color;
 
 /**
  *
@@ -25,9 +26,13 @@ public class TableObserver {
             for (int j = 0; j < table.getListeCellule()[i].length; j++) {
                 if (table.getListeCellule()[i][j].estOccupe()) {
                     if (table.getListeCellule()[i][j].getPion().getCouleur().equals(Couleur.BLANC)) {
-                        vue.setCouleurCellule(i, j, Couleur.BLANC);
+                        vue.setCouleurCellule(i, j, Color.WHITE);
+                    } else if(table.getListeCellule()[i][j].getPion().getCouleur().equals(Couleur.NOIR)){
+                        vue.setCouleurCellule(i, j, Color.BLACK);
+                    }else if ((j % 2 == 1 && i % 2 == 1) || (j % 2 == 0 && i % 2 == 0)) {
+                        vue.setCouleurCellule(i, j, new Color(0, 150, 0));
                     } else {
-                        vue.setCouleurCellule(i, j, Couleur.NOIR);
+                        vue.setCouleurCellule(i, j, new Color(0, 100, 0));
                     }
                 }
             }

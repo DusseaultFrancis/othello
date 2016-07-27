@@ -143,12 +143,10 @@ public class ApplicationVue extends JFrame implements ActionListener {
 
     }
 
-    public void setCouleurCellule(int i, int j, Couleur couleur) {
-        if (couleur.equals(Couleur.BLANC)) {
-            cellules[j][i].setBackground(Color.white);
-        } else {
-            cellules[j][i].setBackground(Color.black);
-        }
+    public void setCouleurCellule(int i, int j, Color couleur) {
+        
+            cellules[j][i].setBackground(couleur);
+       
     }
 
     private class CelluleActionListener implements ActionListener {

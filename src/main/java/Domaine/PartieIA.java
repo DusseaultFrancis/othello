@@ -7,6 +7,8 @@ package Domaine;
 
 import InterfaceGraphique.TableObserver;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -55,13 +57,13 @@ public class PartieIA implements Partie{
                     tour++;
                     changerJoueurCourant();
                     
-                    // le joueur Artificiel joue
-                if(noir.algorithmeJeu(listeTable.get(tour))) {
-                    listeTable.add(new Table(listeTable.get(tour)));
-                    updateObserver(listeTable.get(tour));
-                    tour++;
-                }
-                changerJoueurCourant();
+                        // le joueur Artificiel joue
+                    if(noir.algorithmeJeu(listeTable.get(tour))) {
+                        listeTable.add(new Table(listeTable.get(tour)));
+                        updateObserver(listeTable.get(tour));
+                        tour++;
+                    }
+                    changerJoueurCourant();
                 }
              
             
