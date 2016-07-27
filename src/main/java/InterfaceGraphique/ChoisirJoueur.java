@@ -50,8 +50,11 @@ public class ChoisirJoueur extends JDialog {
         boutonOrdinateur.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg2) {
 
-                ChoisirDifficulte choixJoueur = new ChoisirDifficulte();
-                choixJoueur.setVisible(true);
+                ChoisirDifficulte choixDifficulte = new ChoisirDifficulte();
+                setVisible(false);
+
+                choixDifficulte.setVisible(true);
+
             }
         });
         panelBouton.add(boutonOrdinateur);

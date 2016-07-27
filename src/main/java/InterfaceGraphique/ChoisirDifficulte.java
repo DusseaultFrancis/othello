@@ -52,7 +52,7 @@ public class ChoisirDifficulte extends JDialog {
                 InterfaceGraphique.ApplicationVue jeu = new InterfaceGraphique.ApplicationVue(app);
                 InterfaceGraphique.TableObserver observateur = new InterfaceGraphique.TableObserver(jeu);
                 app.jouerContreIaDebutant(observateur);
-
+                setVisible(false);
                 jeu.setVisible(true);
 
             }
@@ -67,8 +67,9 @@ public class ChoisirDifficulte extends JDialog {
                 InterfaceGraphique.ApplicationVue jeu = new InterfaceGraphique.ApplicationVue(app);
                 InterfaceGraphique.TableObserver observateur = new InterfaceGraphique.TableObserver(jeu);
                 app.jouerContreIaAvance(observateur);
-
+                setVisible(false);
                 jeu.setVisible(true);
+
             }
         });
         panelBouton.add(boutonAvance);

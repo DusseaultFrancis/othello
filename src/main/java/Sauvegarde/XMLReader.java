@@ -10,5 +10,9 @@ package Sauvegarde;
  * @author Francis
  */
 public class XMLReader {
-    
+
+    public void chargerPartie() {
+
+    }
+
 }
