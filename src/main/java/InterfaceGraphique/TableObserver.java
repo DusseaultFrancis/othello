@@ -29,7 +29,9 @@ public class TableObserver {
                         vue.setCouleurCellule(i, j, Color.WHITE);
                     } else if(table.getListeCellule()[i][j].getPion().getCouleur().equals(Couleur.NOIR)){
                         vue.setCouleurCellule(i, j, Color.BLACK);
-                    }else if ((j % 2 == 1 && i % 2 == 1) || (j % 2 == 0 && i % 2 == 0)) {
+                    }
+                }else {
+                    if ((j % 2 == 1 && i % 2 == 1) || (j % 2 == 0 && i % 2 == 0)) {
                         vue.setCouleurCellule(i, j, new Color(0, 150, 0));
                     } else {
                         vue.setCouleurCellule(i, j, new Color(0, 100, 0));
