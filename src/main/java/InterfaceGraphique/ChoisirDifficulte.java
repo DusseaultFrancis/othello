@@ -37,14 +37,16 @@ public class ChoisirDifficulte extends JDialog {
         contenant.setLayout(new GridLayout(1, 1, 0, 0));
 
         panelBouton = new JPanel();
+        panelBouton.setBackground(Color.decode("#AD4F09"));
 
         panelBouton.setBorder(new TitledBorder(null, "Difficulté",
-                TitledBorder.LEFT, TitledBorder.TOP, null, Color.decode("#000000")));
+                TitledBorder.LEFT, TitledBorder.TOP, null, Color.decode("#ffffff")));
 
         panelBouton.setLayout(new GridLayout(1, 1, 0, 0));
         contenant.add(panelBouton);
 
         boutonDebutant = new JButton("Dédutant");
+        boutonDebutant.setBackground(Color.decode("#87E990"));
         boutonDebutant.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg2) {
 
@@ -60,6 +62,7 @@ public class ChoisirDifficulte extends JDialog {
         panelBouton.add(boutonDebutant);
 
         boutonAvance = new JButton("Avancé");
+        boutonAvance.setBackground(Color.decode("#87E990"));
         boutonAvance.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg2) {
 

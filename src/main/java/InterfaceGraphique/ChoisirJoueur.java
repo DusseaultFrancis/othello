@@ -39,27 +39,28 @@ public class ChoisirJoueur extends JDialog {
         contenant.setLayout(new GridLayout(1, 1, 0, 0));
 
         panelBouton = new JPanel();
+        panelBouton.setBackground(Color.decode("#AD4F09"));
 
         panelBouton.setBorder(new TitledBorder(null, "Veuillez choisir votre adversaire",
-                TitledBorder.LEFT, TitledBorder.TOP, null, Color.decode("#000000")));
+                TitledBorder.LEFT, TitledBorder.TOP, null, Color.decode("#ffffff")));
 
         panelBouton.setLayout(new GridLayout(1, 1, 0, 0));
         contenant.add(panelBouton);
 
         boutonOrdinateur = new JButton("Ordinateur");
+        boutonOrdinateur.setBackground(Color.decode("#87E990"));
         boutonOrdinateur.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg2) {
 
-                ChoisirDifficulte choixDifficulte = new ChoisirDifficulte();
                 setVisible(false);
-
-                choixDifficulte.setVisible(true);
-
+                ChoisirDifficulte choixDifficulte = new ChoisirDifficulte();
+                
             }
         });
         panelBouton.add(boutonOrdinateur);
 
         boutonJoueur = new JButton("Joueur");
+        boutonJoueur.setBackground(Color.decode("#87E990"));
         boutonJoueur.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg2) {
 

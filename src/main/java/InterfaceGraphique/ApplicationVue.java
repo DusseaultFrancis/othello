@@ -132,6 +132,9 @@ public class ApplicationVue extends JFrame implements ActionListener {
         boutonChargerPartie.setBackground(Color.decode("#87E990"));
         boutonChargerPartie.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg2) {
+                
+                interfaceGraphique.ChargerPartie partieChargee = new interfaceGraphique.ChargerPartie(app.getPartie());
+                partieChargee.setVisible(true);
               
             }
         });
