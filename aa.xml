@@ -1,0 +1,731 @@
+<Domaine.PartieIA>
+  <blanc>
+    <couleur>BLANC</couleur>
+  </blanc>
+  <noir class="Domaine.IAAvance">
+    <couleur>NOIR</couleur>
+    <listeCellule>
+      <Domaine.Cellule>
+        <ligne>4</ligne>
+        <colonne>6</colonne>
+        <occupe>false</occupe>
+      </Domaine.Cellule>
+    </listeCellule>
+  </noir>
+  <joueurCourant>BLANC</joueurCourant>
+  <listeTable>
+    <Domaine.Table>
+      <listeCellule>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule>
+            <ligne>0</ligne>
+            <colonne>0</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>0</ligne>
+            <colonne>1</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>0</ligne>
+            <colonne>2</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>0</ligne>
+            <colonne>3</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>0</ligne>
+            <colonne>4</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>0</ligne>
+            <colonne>5</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>0</ligne>
+            <colonne>6</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>0</ligne>
+            <colonne>7</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+        </Domaine.Cellule-array>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule>
+            <ligne>1</ligne>
+            <colonne>0</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>1</ligne>
+            <colonne>1</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>1</ligne>
+            <colonne>2</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>1</ligne>
+            <colonne>3</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>1</ligne>
+            <colonne>4</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>1</ligne>
+            <colonne>5</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>1</ligne>
+            <colonne>6</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>1</ligne>
+            <colonne>7</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+        </Domaine.Cellule-array>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule>
+            <ligne>2</ligne>
+            <colonne>0</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>2</ligne>
+            <colonne>1</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>2</ligne>
+            <colonne>2</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>2</ligne>
+            <colonne>3</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>2</ligne>
+            <colonne>4</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>2</ligne>
+            <colonne>5</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>2</ligne>
+            <colonne>6</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>2</ligne>
+            <colonne>7</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+        </Domaine.Cellule-array>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule>
+            <ligne>3</ligne>
+            <colonne>0</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>3</ligne>
+            <colonne>1</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>3</ligne>
+            <colonne>2</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>3</ligne>
+            <colonne>3</colonne>
+            <occupe>true</occupe>
+            <pion>
+              <couleur>BLANC</couleur>
+            </pion>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>3</ligne>
+            <colonne>4</colonne>
+            <occupe>true</occupe>
+            <pion>
+              <couleur>BLANC</couleur>
+            </pion>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>3</ligne>
+            <colonne>5</colonne>
+            <occupe>true</occupe>
+            <pion>
+              <couleur>BLANC</couleur>
+            </pion>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>3</ligne>
+            <colonne>6</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>3</ligne>
+            <colonne>7</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+        </Domaine.Cellule-array>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule>
+            <ligne>4</ligne>
+            <colonne>0</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>4</ligne>
+            <colonne>1</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>4</ligne>
+            <colonne>2</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>4</ligne>
+            <colonne>3</colonne>
+            <occupe>true</occupe>
+            <pion>
+              <couleur>NOIR</couleur>
+            </pion>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>4</ligne>
+            <colonne>4</colonne>
+            <occupe>true</occupe>
+            <pion>
+              <couleur>NOIR</couleur>
+            </pion>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>4</ligne>
+            <colonne>5</colonne>
+            <occupe>true</occupe>
+            <pion>
+              <couleur>NOIR</couleur>
+            </pion>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>4</ligne>
+            <colonne>6</colonne>
+            <occupe>true</occupe>
+            <pion>
+              <couleur>NOIR</couleur>
+            </pion>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>4</ligne>
+            <colonne>7</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+        </Domaine.Cellule-array>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule>
+            <ligne>5</ligne>
+            <colonne>0</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>5</ligne>
+            <colonne>1</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>5</ligne>
+            <colonne>2</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>5</ligne>
+            <colonne>3</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>5</ligne>
+            <colonne>4</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>5</ligne>
+            <colonne>5</colonne>
+            <occupe>true</occupe>
+            <pion>
+              <couleur>BLANC</couleur>
+            </pion>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>5</ligne>
+            <colonne>6</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>5</ligne>
+            <colonne>7</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+        </Domaine.Cellule-array>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule>
+            <ligne>6</ligne>
+            <colonne>0</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>6</ligne>
+            <colonne>1</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>6</ligne>
+            <colonne>2</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>6</ligne>
+            <colonne>3</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>6</ligne>
+            <colonne>4</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>6</ligne>
+            <colonne>5</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>6</ligne>
+            <colonne>6</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>6</ligne>
+            <colonne>7</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+        </Domaine.Cellule-array>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule>
+            <ligne>7</ligne>
+            <colonne>0</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>7</ligne>
+            <colonne>1</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>7</ligne>
+            <colonne>2</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>7</ligne>
+            <colonne>3</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>7</ligne>
+            <colonne>4</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>7</ligne>
+            <colonne>5</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>7</ligne>
+            <colonne>6</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+          <Domaine.Cellule>
+            <ligne>7</ligne>
+            <colonne>7</colonne>
+            <occupe>false</occupe>
+          </Domaine.Cellule>
+        </Domaine.Cellule-array>
+      </listeCellule>
+      <nbPionBlanc>4</nbPionBlanc>
+      <nbPionNoir>1</nbPionNoir>
+    </Domaine.Table>
+    <Domaine.Table>
+      <listeCellule>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array/Domaine.Cellule"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array/Domaine.Cellule[2]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array/Domaine.Cellule[3]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array/Domaine.Cellule[4]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array/Domaine.Cellule[5]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array/Domaine.Cellule[6]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array/Domaine.Cellule[7]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array/Domaine.Cellule[8]"/>
+        </Domaine.Cellule-array>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[2]/Domaine.Cellule"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[2]/Domaine.Cellule[2]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[2]/Domaine.Cellule[3]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[2]/Domaine.Cellule[4]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[2]/Domaine.Cellule[5]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[2]/Domaine.Cellule[6]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[2]/Domaine.Cellule[7]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[2]/Domaine.Cellule[8]"/>
+        </Domaine.Cellule-array>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[3]/Domaine.Cellule"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[3]/Domaine.Cellule[2]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[3]/Domaine.Cellule[3]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[3]/Domaine.Cellule[4]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[3]/Domaine.Cellule[5]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[3]/Domaine.Cellule[6]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[3]/Domaine.Cellule[7]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[3]/Domaine.Cellule[8]"/>
+        </Domaine.Cellule-array>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[4]/Domaine.Cellule"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[4]/Domaine.Cellule[2]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[4]/Domaine.Cellule[3]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[4]/Domaine.Cellule[4]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[4]/Domaine.Cellule[5]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[4]/Domaine.Cellule[6]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[4]/Domaine.Cellule[7]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[4]/Domaine.Cellule[8]"/>
+        </Domaine.Cellule-array>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[5]/Domaine.Cellule"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[5]/Domaine.Cellule[2]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[5]/Domaine.Cellule[3]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[5]/Domaine.Cellule[4]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[5]/Domaine.Cellule[5]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[5]/Domaine.Cellule[6]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[5]/Domaine.Cellule[7]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[5]/Domaine.Cellule[8]"/>
+        </Domaine.Cellule-array>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[6]/Domaine.Cellule"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[6]/Domaine.Cellule[2]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[6]/Domaine.Cellule[3]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[6]/Domaine.Cellule[4]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[6]/Domaine.Cellule[5]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[6]/Domaine.Cellule[6]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[6]/Domaine.Cellule[7]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[6]/Domaine.Cellule[8]"/>
+        </Domaine.Cellule-array>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[7]/Domaine.Cellule"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[7]/Domaine.Cellule[2]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[7]/Domaine.Cellule[3]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[7]/Domaine.Cellule[4]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[7]/Domaine.Cellule[5]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[7]/Domaine.Cellule[6]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[7]/Domaine.Cellule[7]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[7]/Domaine.Cellule[8]"/>
+        </Domaine.Cellule-array>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[8]/Domaine.Cellule"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[8]/Domaine.Cellule[2]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[8]/Domaine.Cellule[3]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[8]/Domaine.Cellule[4]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[8]/Domaine.Cellule[5]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[8]/Domaine.Cellule[6]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[8]/Domaine.Cellule[7]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[8]/Domaine.Cellule[8]"/>
+        </Domaine.Cellule-array>
+      </listeCellule>
+      <nbPionBlanc>3</nbPionBlanc>
+      <nbPionNoir>3</nbPionNoir>
+    </Domaine.Table>
+    <Domaine.Table>
+      <listeCellule>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array/Domaine.Cellule"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array/Domaine.Cellule[2]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array/Domaine.Cellule[3]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array/Domaine.Cellule[4]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array/Domaine.Cellule[5]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array/Domaine.Cellule[6]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array/Domaine.Cellule[7]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array/Domaine.Cellule[8]"/>
+        </Domaine.Cellule-array>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[2]/Domaine.Cellule"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[2]/Domaine.Cellule[2]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[2]/Domaine.Cellule[3]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[2]/Domaine.Cellule[4]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[2]/Domaine.Cellule[5]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[2]/Domaine.Cellule[6]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[2]/Domaine.Cellule[7]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[2]/Domaine.Cellule[8]"/>
+        </Domaine.Cellule-array>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[3]/Domaine.Cellule"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[3]/Domaine.Cellule[2]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[3]/Domaine.Cellule[3]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[3]/Domaine.Cellule[4]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[3]/Domaine.Cellule[5]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[3]/Domaine.Cellule[6]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[3]/Domaine.Cellule[7]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[3]/Domaine.Cellule[8]"/>
+        </Domaine.Cellule-array>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[4]/Domaine.Cellule"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[4]/Domaine.Cellule[2]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[4]/Domaine.Cellule[3]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[4]/Domaine.Cellule[4]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[4]/Domaine.Cellule[5]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[4]/Domaine.Cellule[6]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[4]/Domaine.Cellule[7]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[4]/Domaine.Cellule[8]"/>
+        </Domaine.Cellule-array>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[5]/Domaine.Cellule"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[5]/Domaine.Cellule[2]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[5]/Domaine.Cellule[3]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[5]/Domaine.Cellule[4]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[5]/Domaine.Cellule[5]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[5]/Domaine.Cellule[6]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[5]/Domaine.Cellule[7]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[5]/Domaine.Cellule[8]"/>
+        </Domaine.Cellule-array>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[6]/Domaine.Cellule"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[6]/Domaine.Cellule[2]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[6]/Domaine.Cellule[3]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[6]/Domaine.Cellule[4]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[6]/Domaine.Cellule[5]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[6]/Domaine.Cellule[6]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[6]/Domaine.Cellule[7]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[6]/Domaine.Cellule[8]"/>
+        </Domaine.Cellule-array>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[7]/Domaine.Cellule"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[7]/Domaine.Cellule[2]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[7]/Domaine.Cellule[3]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[7]/Domaine.Cellule[4]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[7]/Domaine.Cellule[5]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[7]/Domaine.Cellule[6]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[7]/Domaine.Cellule[7]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[7]/Domaine.Cellule[8]"/>
+        </Domaine.Cellule-array>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[8]/Domaine.Cellule"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[8]/Domaine.Cellule[2]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[8]/Domaine.Cellule[3]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[8]/Domaine.Cellule[4]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[8]/Domaine.Cellule[5]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[8]/Domaine.Cellule[6]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[8]/Domaine.Cellule[7]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[8]/Domaine.Cellule[8]"/>
+        </Domaine.Cellule-array>
+      </listeCellule>
+      <nbPionBlanc>6</nbPionBlanc>
+      <nbPionNoir>1</nbPionNoir>
+    </Domaine.Table>
+    <Domaine.Table>
+      <listeCellule>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array/Domaine.Cellule"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array/Domaine.Cellule[2]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array/Domaine.Cellule[3]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array/Domaine.Cellule[4]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array/Domaine.Cellule[5]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array/Domaine.Cellule[6]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array/Domaine.Cellule[7]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array/Domaine.Cellule[8]"/>
+        </Domaine.Cellule-array>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[2]/Domaine.Cellule"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[2]/Domaine.Cellule[2]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[2]/Domaine.Cellule[3]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[2]/Domaine.Cellule[4]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[2]/Domaine.Cellule[5]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[2]/Domaine.Cellule[6]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[2]/Domaine.Cellule[7]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[2]/Domaine.Cellule[8]"/>
+        </Domaine.Cellule-array>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[3]/Domaine.Cellule"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[3]/Domaine.Cellule[2]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[3]/Domaine.Cellule[3]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[3]/Domaine.Cellule[4]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[3]/Domaine.Cellule[5]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[3]/Domaine.Cellule[6]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[3]/Domaine.Cellule[7]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[3]/Domaine.Cellule[8]"/>
+        </Domaine.Cellule-array>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[4]/Domaine.Cellule"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[4]/Domaine.Cellule[2]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[4]/Domaine.Cellule[3]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[4]/Domaine.Cellule[4]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[4]/Domaine.Cellule[5]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[4]/Domaine.Cellule[6]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[4]/Domaine.Cellule[7]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[4]/Domaine.Cellule[8]"/>
+        </Domaine.Cellule-array>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[5]/Domaine.Cellule"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[5]/Domaine.Cellule[2]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[5]/Domaine.Cellule[3]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[5]/Domaine.Cellule[4]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[5]/Domaine.Cellule[5]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[5]/Domaine.Cellule[6]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[5]/Domaine.Cellule[7]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[5]/Domaine.Cellule[8]"/>
+        </Domaine.Cellule-array>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[6]/Domaine.Cellule"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[6]/Domaine.Cellule[2]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[6]/Domaine.Cellule[3]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[6]/Domaine.Cellule[4]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[6]/Domaine.Cellule[5]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[6]/Domaine.Cellule[6]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[6]/Domaine.Cellule[7]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[6]/Domaine.Cellule[8]"/>
+        </Domaine.Cellule-array>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[7]/Domaine.Cellule"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[7]/Domaine.Cellule[2]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[7]/Domaine.Cellule[3]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[7]/Domaine.Cellule[4]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[7]/Domaine.Cellule[5]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[7]/Domaine.Cellule[6]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[7]/Domaine.Cellule[7]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[7]/Domaine.Cellule[8]"/>
+        </Domaine.Cellule-array>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[8]/Domaine.Cellule"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[8]/Domaine.Cellule[2]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[8]/Domaine.Cellule[3]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[8]/Domaine.Cellule[4]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[8]/Domaine.Cellule[5]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[8]/Domaine.Cellule[6]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[8]/Domaine.Cellule[7]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[8]/Domaine.Cellule[8]"/>
+        </Domaine.Cellule-array>
+      </listeCellule>
+      <nbPionBlanc>4</nbPionBlanc>
+      <nbPionNoir>4</nbPionNoir>
+    </Domaine.Table>
+    <Domaine.Table>
+      <listeCellule>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array/Domaine.Cellule"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array/Domaine.Cellule[2]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array/Domaine.Cellule[3]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array/Domaine.Cellule[4]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array/Domaine.Cellule[5]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array/Domaine.Cellule[6]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array/Domaine.Cellule[7]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array/Domaine.Cellule[8]"/>
+        </Domaine.Cellule-array>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[2]/Domaine.Cellule"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[2]/Domaine.Cellule[2]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[2]/Domaine.Cellule[3]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[2]/Domaine.Cellule[4]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[2]/Domaine.Cellule[5]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[2]/Domaine.Cellule[6]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[2]/Domaine.Cellule[7]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[2]/Domaine.Cellule[8]"/>
+        </Domaine.Cellule-array>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[3]/Domaine.Cellule"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[3]/Domaine.Cellule[2]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[3]/Domaine.Cellule[3]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[3]/Domaine.Cellule[4]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[3]/Domaine.Cellule[5]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[3]/Domaine.Cellule[6]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[3]/Domaine.Cellule[7]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[3]/Domaine.Cellule[8]"/>
+        </Domaine.Cellule-array>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[4]/Domaine.Cellule"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[4]/Domaine.Cellule[2]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[4]/Domaine.Cellule[3]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[4]/Domaine.Cellule[4]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[4]/Domaine.Cellule[5]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[4]/Domaine.Cellule[6]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[4]/Domaine.Cellule[7]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[4]/Domaine.Cellule[8]"/>
+        </Domaine.Cellule-array>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[5]/Domaine.Cellule"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[5]/Domaine.Cellule[2]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[5]/Domaine.Cellule[3]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[5]/Domaine.Cellule[4]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[5]/Domaine.Cellule[5]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[5]/Domaine.Cellule[6]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[5]/Domaine.Cellule[7]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[5]/Domaine.Cellule[8]"/>
+        </Domaine.Cellule-array>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[6]/Domaine.Cellule"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[6]/Domaine.Cellule[2]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[6]/Domaine.Cellule[3]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[6]/Domaine.Cellule[4]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[6]/Domaine.Cellule[5]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[6]/Domaine.Cellule[6]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[6]/Domaine.Cellule[7]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[6]/Domaine.Cellule[8]"/>
+        </Domaine.Cellule-array>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[7]/Domaine.Cellule"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[7]/Domaine.Cellule[2]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[7]/Domaine.Cellule[3]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[7]/Domaine.Cellule[4]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[7]/Domaine.Cellule[5]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[7]/Domaine.Cellule[6]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[7]/Domaine.Cellule[7]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[7]/Domaine.Cellule[8]"/>
+        </Domaine.Cellule-array>
+        <Domaine.Cellule-array>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[8]/Domaine.Cellule"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[8]/Domaine.Cellule[2]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[8]/Domaine.Cellule[3]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[8]/Domaine.Cellule[4]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[8]/Domaine.Cellule[5]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[8]/Domaine.Cellule[6]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[8]/Domaine.Cellule[7]"/>
+          <Domaine.Cellule reference="../../../../Domaine.Table/listeCellule/Domaine.Cellule-array[8]/Domaine.Cellule[8]"/>
+        </Domaine.Cellule-array>
+      </listeCellule>
+      <nbPionBlanc>0</nbPionBlanc>
+      <nbPionNoir>0</nbPionNoir>
+    </Domaine.Table>
+  </listeTable>
+  <tour>4</tour>
+  <fini>false</fini>
+  <observateur/>
+</Domaine.PartieIA>

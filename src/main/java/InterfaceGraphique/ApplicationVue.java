@@ -40,6 +40,8 @@ public class ApplicationVue extends JFrame implements ActionListener {
     private JButton boutonVisualiserPartie;
     private JButton boutonQuitter;
 
+    JMenuBar barreMenu = new JMenuBar();
+
     public ApplicationVue(Application app) {
 
         contenu = new JPanel();
@@ -53,6 +55,43 @@ public class ApplicationVue extends JFrame implements ActionListener {
 
         table = new JPanel(new GridLayout(0, 9));
         table.setBackground(Color.decode("#AD4F09"));
+
+        JMenu menuFichier = new JMenu("Fichier");
+        JMenu menuAide = new JMenu("Aide");
+        
+        JMenuItem quitter = new JMenuItem("Quitter");
+        quitter.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg2) {
+                System.exit(0);
+            }
+        });
+        JMenuItem nouvellePartie = new JMenuItem("Nouvelle Partie");
+        nouvellePartie.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg2) {
+                Application app = new Application();
+                InterfaceGraphique.ApplicationVue jeu = new InterfaceGraphique.ApplicationVue(app);
+                InterfaceGraphique.TableObserver observateur = new InterfaceGraphique.TableObserver(jeu);
+                app.jouerContreIaDebutant(observateur);
+                setVisible(false);
+                jeu.setVisible(true);
+            }
+        });
+        JMenuItem reglement = new JMenuItem("Règlement du jeu");
+        reglement.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg2) {
+              interfaceGraphique.Reglement reglement = new interfaceGraphique.Reglement();
+            }
+        });
+        
+        menuFichier.add(nouvellePartie);
+        menuFichier.add(quitter);
+        
+        menuAide.add(reglement);
+
+        barreMenu.add(menuFichier);
+        barreMenu.add(menuAide);
+        
+        setJMenuBar(barreMenu);
 
         for (int i = 0; i < cellules.length; i++) {
             for (int j = 0; j < cellules[i].length; j++) {
@@ -117,25 +156,21 @@ public class ApplicationVue extends JFrame implements ActionListener {
         boutonSauvegarder.setBackground(Color.decode("#87E990"));
         boutonSauvegarder.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg2) {
-               
+
                 interfaceGraphique.SaisirNomSauvegarde nomSauvegarde = new interfaceGraphique.SaisirNomSauvegarde(app.getPartie());
                 nomSauvegarde.setVisible(true);
 
-                
-              
             }
         });
-        
-        
 
         boutonChargerPartie = new JButton("Charger la partie");
         boutonChargerPartie.setBackground(Color.decode("#87E990"));
         boutonChargerPartie.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg2) {
-                
+
                 interfaceGraphique.ChargerPartie partieChargee = new interfaceGraphique.ChargerPartie(app.getPartie());
                 partieChargee.setVisible(true);
-              
+
             }
         });
 
@@ -151,7 +186,7 @@ public class ApplicationVue extends JFrame implements ActionListener {
         boutonQuitter.setBackground(Color.decode("#87E990"));
         boutonQuitter.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
-                System.exit(1);
+                System.exit(0);
             }
         });
 
@@ -173,9 +208,9 @@ public class ApplicationVue extends JFrame implements ActionListener {
     }
 
     public void setCouleurCellule(int i, int j, Color couleur) {
-        
-            cellules[j][i].setBackground(couleur);
-       
+
+        cellules[j][i].setBackground(couleur);
+
     }
 
     private class CelluleActionListener implements ActionListener {
