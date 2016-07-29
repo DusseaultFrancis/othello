@@ -7,6 +7,7 @@ package Domaine;
 
 import InterfaceGraphique.TableObserver;
 import java.util.ArrayList;
+import java.util.StringTokenizer;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -31,7 +32,6 @@ public class PartieIA implements Partie{
         this.noir = noir;
         this.joueurCourant = Couleur.BLANC;
         this.fini = false;
-        this.observateur = observateur;
         tour = 0;
         updateObserver(listeTable.get(tour));
     }
@@ -47,7 +47,28 @@ public class PartieIA implements Partie{
     
     @Override
     public void jouer(int ligne, int colonne) {
-        
+        boolean peutJouer = false;
+        if(fini){
+            return;
+        }
+        for(int i = 0; i < 8; i++){
+            for(int j = 0; j < 8; j++){
+                if(listeTable.get(tour).peutJouer(Couleur.BLANC, i, j) != -1){
+                    peutJouer = true;
+                    break;
+                }
+            }
+            if(peutJouer){
+                break;
+            }
+            if(i == 7){
+                noir.algorithmeJeu(listeTable.get(tour));
+                listeTable.add(new Table(listeTable.get(tour)));
+                updateObserver(listeTable.get(tour));
+                tour++;
+                changerJoueurCourant();
+            }
+        }
         
              // le joueur humain joue
                 
@@ -71,16 +92,16 @@ public class PartieIA implements Partie{
                 fini = true;
                 return;
             }
-            System.out.println("asdfs");
+            System.out.println(listeTable.get(tour).getNbPionBlanc() + listeTable.get(tour).getNbPionNoir());
         
     }
     
     public void register(TableObserver observateur) {
-        this.observateur = observateur;
+        this.observateur=observateur;
     }
     
     public void updateObserver(Table table) {
-        observateur.update(table);
+            observateur.update(table);    
     }
     
 
@@ -110,8 +131,10 @@ public class PartieIA implements Partie{
     }
 
     @Override
-    public void visualiser() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void visualiser(int tour) {
+        if(fini){
+            updateObserver(listeTable.get(tour));
+        }
     }
 
     @Override

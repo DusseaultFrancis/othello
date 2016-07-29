@@ -5,6 +5,8 @@
  */
 package Domaine;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Francis
@@ -15,8 +17,10 @@ public interface Partie {
 
     public void jouer(int linge, int colonne);
 
-    public void visualiser();
+    public void visualiser(int tour);
 
     public boolean estFini();
+    
+    public ArrayList<Table> getTable();
 
 }

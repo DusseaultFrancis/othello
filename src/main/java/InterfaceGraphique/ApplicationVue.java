@@ -39,7 +39,7 @@ public class ApplicationVue extends JFrame implements ActionListener {
     private JButton boutonChargerPartie;
     private JButton boutonVisualiserPartie;
     private JButton boutonQuitter;
-
+private int tour = 0;
     public ApplicationVue(Application app) {
 
         contenu = new JPanel();
@@ -121,8 +121,6 @@ public class ApplicationVue extends JFrame implements ActionListener {
                 interfaceGraphique.SaisirNomSauvegarde nomSauvegarde = new interfaceGraphique.SaisirNomSauvegarde(app.getPartie());
                 nomSauvegarde.setVisible(true);
 
-                
-              
             }
         });
         
@@ -133,7 +131,7 @@ public class ApplicationVue extends JFrame implements ActionListener {
         boutonChargerPartie.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg2) {
                 
-                interfaceGraphique.ChargerPartie partieChargee = new interfaceGraphique.ChargerPartie(app.getPartie());
+                interfaceGraphique.ChargerPartie partieChargee = new interfaceGraphique.ChargerPartie(app);
                 partieChargee.setVisible(true);
               
             }
@@ -143,7 +141,10 @@ public class ApplicationVue extends JFrame implements ActionListener {
         boutonVisualiserPartie.setBackground(Color.decode("#87E990"));
         boutonVisualiserPartie.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg2) {
-                app.getPartie().visualiser();
+                app.getPartie().visualiser(tour++);
+                if(tour >= app.getPartie().getTable().size()){
+                    tour = 0;
+                }
             }
         });
 
@@ -151,7 +152,7 @@ public class ApplicationVue extends JFrame implements ActionListener {
         boutonQuitter.setBackground(Color.decode("#87E990"));
         boutonQuitter.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
-                System.exit(1);
+                System.exit(0);
             }
         });
 
@@ -173,9 +174,7 @@ public class ApplicationVue extends JFrame implements ActionListener {
     }
 
     public void setCouleurCellule(int i, int j, Color couleur) {
-        
             cellules[j][i].setBackground(couleur);
-       
     }
 
     private class CelluleActionListener implements ActionListener {
@@ -190,7 +189,7 @@ public class ApplicationVue extends JFrame implements ActionListener {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            System.out.println("i: " + i + ", j: " + j);
+            
             app.getPartie().jouer(i, j);
         }
     }

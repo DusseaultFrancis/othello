@@ -39,10 +39,12 @@ public class ChargerPartie extends JDialog {
     private String nom;
     private JLabel info;
     JComboBox choixChargerPartie;
+    Application app;
+    
 
     private JOptionPane joueurInvalide;
 
-    public ChargerPartie(Partie partie) {
+    public ChargerPartie(Application app) {
 
         setTitle("Chagrer une partie");
         setBounds(800, 300, 400, 150);
@@ -85,11 +87,11 @@ public class ChargerPartie extends JDialog {
 
                 nom = choixChargerPartie.getSelectedItem().toString();
 
-                PartieIA partieIA = null;
+                //PartieIA partieIA = null;
 
                 try {
-                    partieIA = Sauvegarde.XMLReader.lireFichierXML(nom);
-                    InterfaceGraphique.TableObserver.update(partieIA.getTable().get(partieIA.getTable().size() - 1));
+                    app.setPartie(Sauvegarde.XMLReader.lireFichierXML(nom));
+                    InterfaceGraphique.TableObserver.update(app.getPartie().getTable().get(app.getPartie().getTable().size() - 1));
                 } catch (IOException ex) {
                     Logger.getLogger(ChargerPartie.class.getName()).log(Level.SEVERE, null, ex);
                 }
@@ -137,5 +139,6 @@ public class ChargerPartie extends JDialog {
     public JComboBox getLeNomDeTaComboBox() {
         return choixChargerPartie;
     }
+    
 
 }

@@ -38,9 +38,16 @@ public class Table {
         this.listeCellule = new Cellule[8][8];
         for(int i = 0; i < listeCellule.length; i++) {
             for(int j = 0; j < listeCellule.length; j++) {
-                this.listeCellule[i][j] = table.listeCellule[i][j];
+                Cellule cell = new Cellule(i,j);
+                cell.setOccupe(table.listeCellule[i][j].estOccupe());
+                if(cell.estOccupe()){
+                    cell.setPion(new Pion(table.listeCellule[i][j].getPion().getCouleur()));
+                }
+                this.listeCellule[i][j] = cell;
             }
         }
+        this.nbPionBlanc = table.nbPionBlanc;
+        this.nbPionNoir = table.nbPionNoir;
     }
 
     private void init(Couleur couleur, int ligne, int colonne) {
